@@ -5,6 +5,7 @@ print("Armstrong numbers between", start, "and", end, "are:")
 
 for num in range(start, end):
     order = len(str(num))
+
     sum = 0
     temp = num
     while temp > 0:
