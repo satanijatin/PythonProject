@@ -1,4 +1,4 @@
-def count_occurrences(lst, element):
+def countelement(lst, element):
     occurrences = 0
     for item in lst:
         if item == element:
@@ -8,4 +8,4 @@ def count_occurrences(lst, element):
 
 my_list = [1, 2, 3, 4, 1, 2, 1, 1]
 element_to_count = int(input("Enter Number to be Count : "))
-print(f"The element {element_to_count} occurs {count_occurrences(my_list, element_to_count)} times.")
+print(f"The element {element_to_count} occurs {countelement(my_list, element_to_count)} times.")
