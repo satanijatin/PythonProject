@@ -1,3 +1,6 @@
+# Write a Python program to read an entire text file. 
+
+
 def read_text_file(file_path):
     try:
         with open(file_path, 'r') as file:
@@ -10,7 +13,7 @@ def read_text_file(file_path):
         print(f"Error occurred: {e}")
         return None
 
-# Example usage:
+
 file_path = 'C:/Users/JATIN/Documents/GitHub/PythonProject/Assignment3/example.txt'
 contents = read_text_file(file_path)
 if contents is not None:
