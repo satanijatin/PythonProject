@@ -13,10 +13,21 @@ class B(A):
     
 
     def display(self):
-        print("first class is B")
+        print("Second class is B")
+
+class C(B):
+
+    def __init__(self):
+        print("hello C")
+    
+
+    def display(self):
+        print("Third class is C")
 
 a=A()
 a.display()
 b=B()
 b.display()
+c=C()
+c.display()
         
