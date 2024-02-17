@@ -1,21 +1,26 @@
-class Base:
-	def __init__(self):
-		self.a = "GeeksforGeeks"
-		self.__c = "GeeksforGeeks"
+class A:
+
+    def __init__(self,name):
+        self.name=name
+        # print("Hello world")
+
+   
+
+    def displaya(self):
+        print(f"first class is A {self.name}")
+
+class B():
+
+    def __init__(self):
+        print("hello")
+
+    def displayb(self):
+        print("Second class is B")
 
 
-class Derived(Base):
-	def __init__(self):
+aa=A("jatin")
+aa.displaya()
 
-		
-		Base.__init__(self)
-		print("Calling private member of base class: ")
-		print(self.__c)
-
-
-# Driver code
-obj1 = Base()
-obj2=Derived()
-print(obj1.a)
-
+bb=B()
+bb.displayb()
 
