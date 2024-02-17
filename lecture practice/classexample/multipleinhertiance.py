@@ -10,7 +10,6 @@ class B():
 
     def __init__(self):
         print("hello")
-    
 
     def displayb(self):
         print("Second class is B")

@@ -1,11 +1,21 @@
-from builtins import int
-import random
-a=random.randint(9,20)
+class Base:
+	def __init__(self):
+		self.a = "GeeksforGeeks"
+		self.__c = "GeeksforGeeks"
 
-aaa=int(input("Enter Input Number : "))
+
+class Derived(Base):
+	def __init__(self):
+
+		
+		Base.__init__(self)
+		print("Calling private member of base class: ")
+		print(self.__c)
 
 
-if aaa==a:
-    print("Match")
-else:
-    print("Not Match")
+# Driver code
+obj1 = Base()
+obj2=Derived()
+print(obj1.a)
+
+
