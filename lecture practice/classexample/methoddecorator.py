@@ -16,3 +16,5 @@ def sum(a,b):
 
 hello()
 sum(10,20)
+
+class demo
